@@ -1,0 +1,58 @@
+.project-heading{
+    text-align: center;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.container {
+   /*  position: absolute;
+    left: 15%; */
+    width: 70%;
+   /*  padding: 6rem 0;  */
+   /*  background: rgba(19, 19, 19, 0.8);  */
+ /*   border-radius: 10px; */
+/*  background-color: rgba(19, 19, 19, 0.8); */
+   height: 150px;
+  }
+  
+.container img{
+    padding: 5px;
+     margin-left: 20%; 
+    width: 25%;
+    height: 150px;
+    float: left;
+    border-radius: 10px;
+}
+ .righttext{
+ margin-left: 50%;
+} 
+
+
+@media screen and (max-width:768px) {
+  .container img{
+    padding: 5px;
+     margin-left: 10%; 
+    width: 25%;
+    height: 150px;
+    float: left;
+    border-radius: 10px;
+}
+ .righttext{
+ margin-left: 35%;
+} 
+}
+@media screen and (max-width:425px) {
+  .container img{
+    padding: 5px;
+     margin-left: 10%; 
+    width: 25%;
+    height: 150px;
+    float: left;
+    border-radius: 10px;
+}
+ .righttext{
+ margin-left: 50%;
+} 
+
+
+}
+

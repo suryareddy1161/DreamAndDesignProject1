@@ -1,0 +1,74 @@
+/* .Clints-container{
+    
+} */
+.project-heading{
+    text-align: center;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+
+.product--image {
+    width: 100%;
+    height: 16em;
+    object-fit: cover;
+  }
+  
+  .card {
+   /*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  */
+    max-width: 320px;
+    margin: auto 1rem;
+    text-align: center;
+    font-family: arial;
+  }
+
+  @media (max-width: 430px) {
+  
+    .product--image {
+        width: 100%;
+        height: 16em;
+        object-fit: cover;
+       
+      }
+      .card{
+        margin-left: 13%;
+      }
+  }
+  @media (max-width: 430px) {
+  
+    .product--image {
+        width: 100%;
+        height: 16em;
+        object-fit: cover;
+       
+      }
+      .card{
+        margin-left: 15%;
+        max-width: 300px;
+      }
+  }
+  @media (max-width: 375px) {
+  
+    .product--image {
+        width: 100%;
+        height: 16em;
+        object-fit: cover;
+       
+      }
+      .card{
+        margin-left: 25%;
+        max-width: 200px;
+      }
+  }
+  @media (max-width: 320px) {
+  
+    .product--image {
+        width: 100%;
+        height: 16em;
+        object-fit: cover;
+       
+      }
+      .card{
+        margin-left: 19%;
+        max-width: 200px;
+      }
+  }
