@@ -3,10 +3,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '../Component/Navbar/Navbar'
 import Servicesp from '../Component/Servicesp/Servicesp';
 import Footer from '../Component/Footer/Footer';
+import {Helmet } from 'react-helmet'
  const Services = () => {
  
   return (
     <div>
+       <Helmet>
+        <meta charSet='utf-8' />
+        <title>dream and design</title>
+        <meta name='keywords' content='marketing'/>
+        <meta name="description" content='portfolio'/>
+      </Helmet>
       <Navbar/>
       <Servicesp/>
       <Footer/>

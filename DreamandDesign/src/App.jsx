@@ -6,6 +6,8 @@ import Portfolio from './Pages/Portfolio'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 import { useState } from 'react'
+import ScrollToTop from "react-scroll-to-top";
+import "./App.css"
 
 function App() {
   const [load,SetLoad] = useState(true)
@@ -19,8 +21,11 @@ function App() {
   }
 
   return (
-    
+  
+  
     ! load && (
+      <>
+      <ScrollToTop className='up'/>
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/services' element={<Services/>} />
@@ -28,7 +33,10 @@ function App() {
       <Route path='/about' element={<About/>} />
       <Route path='/contact' element={<Contact/>} />
     </Routes>
+    </>
+    
     )
+    
     
   )
 }

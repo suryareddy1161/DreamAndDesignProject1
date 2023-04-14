@@ -1,14 +1,18 @@
 .project-heading{
     text-align: center;
     padding: 4rem 0 2rem 0;
-    margin-top: 3px;
+    margin-top: 10px;
 }
 .work-container{
     background:#c0c4d6;
+    height: fit-content;
+    width: 100%;
+
 }
 
 .project-container{
     max-width: 1050px;
+   /*  max-height: 500px; */
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -18,17 +22,19 @@
 
 }
 .project-card{
-    border: 1px solid black;
+  /*   border: 1px solid black; */
     /* background: #1a1919; */
     /* padding:1.2rem 1rem; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-top: 30px;
+    height: 500px;
     
 }
 .project-card img{
 
-    width: 100%;
-    height: 150px;
+    width: 350px;
+    height: 500px;
+    border-radius:5px ;
 }
 .project-tittle{
     color:#1a1919;
@@ -38,10 +44,10 @@
 
     
 }
-.project-card:hover {
+/* .project-card:hover {
     box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
     transform: scale(1.1)
-}
+} */
 /* .pro-details p{
     padding-bottom: 1rem;
     font-size: 1.1rem;
@@ -55,10 +61,145 @@
 .pro-btn .btn{
     padding: 0.5rem 1rem;
 } */
-@media screen and (max-width:740px){
+.container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border: 5px solid black;
+    border-color: white;
+    margin-top: 25px;
+    background-color: white;
+   /*  border-radius: 50px; */
+  }
+  
+  .image {
+    display: block;
+    margin-top: 5px;
+    width: 300px;
+    height: 480px;
+    border-radius: 5px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-radius: 5px;
+   /*   border: 15px solid #c0c4d6 ;  */
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+@media screen and (max-width:900px){
     .project-container{
-        max-width: 90%;
-        margin: auto;
-        grid-template-columns: 1fr;
+        max-width: 100%;
+         margin: auto; 
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(2,1fr);
+     
+    }
+   
+   
+    
+    .container {
+        position: relative;
+        max-width: 300px;
+        height: 500px;
+        border: 5px solid black;
+        border-color: white;
+        margin-top: 25px;
+       /*  background-color: white; */
+         border-radius: 5px;   
+    }
+    .image {
+        min-width: 330px;
+        min-height: 480px;
+        /* margin-left: -100px; */
+        position: absolute;
+        left: -10%;     
+    }
+}
+@media screen and (max-width:500px){
+    .project-container{
+        max-width: 100%;
+         margin: auto; 
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(1, 1fr);
+     
+    }
+   
+   
+    
+    .container {
+        position: relative;
+        max-width: 300px;
+        height: 500px;
+        border: 5px solid black;
+        border-color: white;
+        margin-top: 25px;
+       /*  background-color: white; */
+         border-radius: 5px;
+       
+    }
+    .image {
+        margin-top: -3px;
+        min-width: 290px;
+        min-height: 495px;
+        /* margin-left: -100px; */
+        position: absolute;
+        left: -10%;     
+    }
+}
+@media screen and (max-width:350px){
+    .project-container{
+        max-width: 100%;
+         margin: auto; 
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(1, 1fr);
+     
+    }
+   
+   
+    
+    .container {
+        position: relative;
+        max-width: 300px;
+        height: 410px;
+        border: 5px solid black;
+        border-color: white;
+        margin-top: 25px;
+       /*  background-color: white; */
+        border-radius: 5px; 
+       
+    }
+    .image {
+        margin-top: -3px;
+        min-width: 270px;
+        min-height: 400px;
+        /* margin-left: -100px; */
+        position: absolute;
+        left: -10%;     
     }
 }

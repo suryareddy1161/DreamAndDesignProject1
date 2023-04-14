@@ -1,23 +1,34 @@
 .aboutmain{
-    width: 100%;
+    width: 85%;
     height: 100%;
     background-color: #161922;
     display: flex;
     justify-content: center;
     align-items: center;
-     margin-bottom: -10px; 
+     margin-bottom: 20px; 
+     margin-top: 20px;
+     margin-left: 8%;
+     border-radius: 5px;
 }
 .imgmainabout{
+    
     height: 450px;
-    width: 500px;
-    max-width: 100%;
-    border-radius: 100px;
+    width: 450px;
+   /*  max-width: 100%; */
+   /*  margin-top: -10px; */
+    margin-bottom: -1px;
+    padding: 50px;
+ /*    padding: 50px 120px 50px 50px; */
+    border-radius:90px;
+     border-radius: 70px; 
+    
 }
+
 .abouttext{
     width: 550px;
     max-width: 100%;
     padding: 0 10px;
-
+    margin-top: 10px;
 }
 .aboutcontent{
     width: 1280px;
@@ -30,9 +41,10 @@
 }
 .abouttext h1{
     color: #ffcc74;
-    font-size: 85px;
+    font-size: 60px;
     margin-bottom: 20px;
     text-transform: capitalize;
+    margin-top: -10px;
 }
 .abouttext h5{
     color: white;
@@ -43,12 +55,37 @@
 }
 .abouttext p{
     color: #c0c4d6;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 1px;
+    font-size: 5rem;
+   /*  line-height: 50px; */
+   /*  letter-spacing: 1px; */
     margin-bottom: 45px;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+/*   background-size: auto auto;
+  background-clip: border-box; */
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+/*   text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    /*   font-size: 190px; */
 }
-button{
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.chatbth{
     background-color: #ffcc74;
     color: black;
     border: 2px solid transparent;
@@ -59,7 +96,7 @@ button{
     font-weight: bold;
     margin-bottom: 10px;
 }
-button  :hover{
+.chatbth  :hover{
     transform: scale(1.2);
     background-color: transparent;
     border: 2px solid #ffcc74;
@@ -67,33 +104,100 @@ button  :hover{
     transition: .4s;
     cursor: pointer;
 }
+.founder2{
+    color: #c0c4d6;
+    font-size: 3.5rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+.founder3{
+    color: #c0c4d6;
+    font-size: 3rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
 @media screen and (max-width:1180px) {
     .aboutmain{
-        width: 100%;
+        width: 80%;
         height: auto;
-        padding: 70px 0px;
+         padding: 10px 0px;
+         margin-left: 10%; 
     }
+    .chatbth{
+        margin-left: 40%;
+    }
+   /*  button{
+        margin-left: ;
+    } */
   
 }
-  @media screen and (max-width:650px) {
-    .aboutmain{
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-    }
+  @media screen and (max-width:450px) {
+  
   .imgmainabout{
-    margin-bottom: 35px;
+    height: 350px;
+    width: 350px;
+   
   }
-  .abouttext h1{
-    font-size: 60px;
-    margin-bottom: 25px;
-  }
+ 
+  .founder2{
+    color: #c0c4d6;
+    font-size: 2rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
 }
-@media screen and (max-width:1180px) {
-    .aboutmain{
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-    }
+.founder3{
+    color: #c0c4d6;
+    font-size: 2rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+.abouttext p{
+    color: #c0c4d6;
+    font-size: 4rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+ 
+}
+@media screen and (max-width:375px) {
+ .chatbth{
+    margin-left: 25%;
+ }
   
 }
+@media screen and (max-width:350px) {
+
+    .imgmainabout{
+      height: 320px;
+      width: 320px;
+     
+    }
+   
+    .founder2{
+      color: #c0c4d6;
+      font-size: 2rem;
+      line-height: 28px;
+      letter-spacing: 1px;
+      margin-bottom: 45px;
+  }
+  .founder3{
+      color: #c0c4d6;
+      font-size: 2rem;
+      line-height: 28px;
+      letter-spacing: 1px;
+      margin-bottom: 45px;
+  }
+  .abouttext p{
+      color: #c0c4d6;
+      font-size: 3.5rem;
+      line-height: 28px;
+      letter-spacing: 1px;
+      margin-bottom: 45px;
+  }
+   
+  }

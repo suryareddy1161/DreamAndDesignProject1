@@ -8,9 +8,21 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+  
+  const [color,setColor] = useState(false)
+  const changecolor = () =>{
+      if(window.scrollY >=100){
+          setColor(true)
+      }
+      else{
+          setColor(false)
+      }
+  }
+  window.addEventListener("scroll",changecolor)
+ 
   return (
     <>
-      <nav className="main-nav">
+      <nav className={color ? "main-nav main-nav-bg" : "main-nav"  }>
         {/* 1st logo part  */}
         <div className="logo">
          {/*  <h2> */}
@@ -25,7 +37,7 @@ const Navbar = () => {
           className={
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
           }>
-          <ul>
+          <ul className="ulc">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -33,7 +45,7 @@ const Navbar = () => {
               <NavLink to="/services">services</NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio">portfolio</NavLink>
+              <NavLink to="/portfolio">Price's</NavLink>
             </li>
             <li>
               <NavLink to="/about">about us</NavLink>

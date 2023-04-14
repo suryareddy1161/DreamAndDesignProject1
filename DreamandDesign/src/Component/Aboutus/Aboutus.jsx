@@ -1,21 +1,29 @@
 import React from 'react'
+import Me from "../../assets/Me3.png"
 import './Aboutus.css'
 const Aboutus = () => {
     return (
      
 <>
 <h1 className='project-heading'>About Us</h1>
-        <div className="container">
-  <div className="leftimg">
-    <img alt="about" width="100%" src='https://i.pinimg.com/280x280_RS/e7/92/81/e79281b60007598663cf96a5239f0a0e.jpg' />
+        <div className="containerabout">
+  <div className="left">
+  <h1 className='name1'>Karthik Reddy</h1>
+  <div ><p className='founder'>Founder, Dream & Design</p></div>
+  <div ><p className='founder1'>Vfx Artist</p></div>
+  <div className='name'>
+  <h1 className='name'>Meet</h1>
+        <h1 className='name'>The</h1>
+        <h1 className='name'>Founder</h1>
   </div>
+      
+      
+  </div>
+ 
+
   <div className="righttext">
     
-        <h1>Karthit</h1>
-      <p>In publishing and graphic design, 
-        Lorem ipsum is a placeholder text commonly used to demonstrate the visual form 
-</p>
-    
+      <img alt="Avatar" className='img' src={Me} />
   </div>
 </div>
 </>

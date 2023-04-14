@@ -1,4 +1,5 @@
 import React from 'react'
+import Imagecard from './Imagecard'
 import "./ProjectCard.css"
 import ProjectCard from './Servicescard'
 import ProjectCardData from './Servicesdata'
@@ -10,7 +11,7 @@ const Servicesour = () => {
         <div className='project-container'>
         {ProjectCardData.map((val,ind)=>{
             return(
-                <ProjectCard 
+                <Imagecard 
                 key={ind}
                 imgsrc={val.imgsrc}
                 tittle={val.tittle}

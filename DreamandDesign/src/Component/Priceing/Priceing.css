@@ -1,46 +1,72 @@
+.priceing-heading{
+  text-align: center;
+    padding: 3rem 0 5rem 0;
+    /*  */
+}
 .pricingpr{
     width: 100%;
-    padding-left: 6rem 1rem;
-    
+    padding-left: 6rem 1rem; 
+    padding: 0 0 5rem 0;
     margin-top: 10px;
     text-decoration: none;
+    border-radius: 5px solid blue;
+  
 }
-
+.rupee{
+    background-color: blue;
+    margin-bottom: -3.9%;
+    border-radius: 80px 80px 10px 10px;
+}
 .card-containerpr{
     max-width: 1140px ;
-    margin: auto;
+   
+     margin: auto; 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+    grid-template-columns: repeat(4, 1fr); 
+   grid-gap: 40px;
     
 }
 .cardpr{
-    border: 1px solid #eee;
-    color: #eee;
+  /*    border: 1px solid #eee;  */
+     color: #eee;
     text-align: center;
-    padding: 1rem;
-    background: #000;
-    border-radius: 10px solid white;
+    /* padding: 1rem;  */
+    padding-top: 1rem;
+    border-radius: 10px 10px 10px 10px;
+     background: #000; 
+   /*  border-radius: 1px solid white; */
+}
+.cardpr img{
+    width: 100%;
+    height: 500px;
+    
 }
 
 .cardpr h3{
-    font-size: 1.4rem;
-    padding: 1rem;
+    font-size: 4rem;
+    background-color:blue;
+   width: 110%;
+   margin-left: -5%;
+    border-radius: 50px 50px 50px 50px;
+    /* padding: 1rem; */
+  
+  /*   border-radius: 5px solid black; */
 }
 .cardpr p{
     padding: 10px 0;
-}
-.bar{
+    font-weight: 700;
+}  
+ .bar{
     border-bottom: 1px solid #eee;
     width: 10%;
     margin: 1.5rem auto;
     display: block;
-}
-.btc{
+} 
+ .btc{
     font-size: 4rem;
     font-weight: 600;
-    padding: 1rem 0;
-}
+  /*   padding: 1rem 0; */
+} 
 .btnpr{
     padding: 12px 32px;
     font-size: 1rem;
@@ -59,7 +85,7 @@
     margin: 2rem auto;
 }
 .cardpr .btnpr{
-    padding: 12px 32px;
+   /*  padding: 12px 32px; */
     font-size: 1rem;
     text-transform: uppercase;
     background: rgb(248, 217, 15);
@@ -67,6 +93,9 @@
     border: 1px solid #fff;
     font-weight: 600;
     cursor: pointer;
+  }
+  .cardpr p{
+    font-size: medium;
   }
 /*  .cardpr .btnpr :hover{
     background: rgba(255,255,255,0.2);
@@ -78,14 +107,21 @@
     color: #fff;
     transition: 0.3s;
   } */
-  .cardpr:hover{
+/*   .cardpr:hover{
     box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
  
-}
-@media screen and (max-width:740px){
+} */
+@media screen and (max-width:800px){
     .card-containerpr{
         max-width: 90%;
         margin: auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+}
+@media screen and (max-width:430px){
+  .card-containerpr{
+      max-width: 90%;
+      margin: auto;
+      grid-template-columns: 1fr ;
+  }
 }
